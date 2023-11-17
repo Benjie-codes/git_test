@@ -1,36 +1,24 @@
-// document.getElementById("count_el").innerHTML=5
+let errorEl = document.getElementById('error')
+console.log(errorEl)
 
-// let myAge = 23 console.log(myAge)
-
-// function increment() {
-
-// }
-
-// Lap increment function
-// let lapsCompleted = 0
-
-// function totalLap() {
-//     lapsCompleted = lapsCompleted + 1
-//     console.log(lapsCompleted)
-// }
-
-// totalLap()
-// totalLap()
-// totalLap()
-
+let saveEl = document.getElementById('save-el')
 let count_El = document.getElementById("count_el")
-
 let count = 0
 
 function increment(){
-    count = count + 1
-    count_El.innerText=count
+    count += 1
+    count_El.textContent=count
+    //code to test error application
+    errorEl.textContent = "Something went wrong, please try again"
 }
 
 function save() {
-    console.log(count)
+    entries = count + ' - '
+    saveEl.textContent += entries
+    console.log(saveEl.textContent)
+    count = 0
+    count_El.textContent=count
 }
 
-save()
 
 
