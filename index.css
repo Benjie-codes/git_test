@@ -28,7 +28,9 @@ h2{
     padding: 10px 100px;
     font-size: 20px;
     border-radius: 7px;
+    font-weight: bold;
 }
 .btn:hover{
     background-color: rgb(65, 174, 217);
+    cursor: pointer ;
 }
