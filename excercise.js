@@ -52,23 +52,58 @@ console.log(fullName)
 // }
 // welcome()
 
-let myPoints = 3
+// let myPoints = 3
 
-function add3Points(){
-    myPoints += 3
-    console.log(myPoints)
+// function add3Points(){
+//     myPoints += 3
+//     console.log(myPoints)
+// }
+
+// function remove1Point(){
+//     myPoints -= 1
+//     console.log(myPoints)
+// }
+
+// add3Points()
+// add3Points()
+// remove1Point()
+// remove1Point()
+// add3Points()
+// console.log(myPoints)
+
+let num1 = 8
+let num2 = 2
+
+let num1El = document.getElementById("num1-el").textContent= num1
+let num2El = document.getElementById("num2-el").textContent= num2
+let symEl = document.getElementById("symbol")
+
+let totalEl = document.getElementById("sum-el")  
+
+function add(){
+    addition = num1 + num2
+    totalEl.textContent += addition
+    symEl.textContent = ('+')
 }
 
-function remove1Point(){
-    myPoints -= 1
-    console.log(myPoints)
+function subtract(){
+    sub = num1 - num2
+    totalEl.textContent += sub
+    symEl.textContent = ('-')
 }
 
-add3Points()
-add3Points()
-remove1Point()
-remove1Point()
-add3Points()
-console.log(myPoints)
+function divide(){
+    div = num1 / num2
+    totalEl.textContent += div
+    symEl.textContent = ('/')
+}
+
+function multiply(){
+    mult = num1 * num2
+    totalEl.textContent += mult
+    symEl.textContent = ('*')
+}
+
+
 
 
