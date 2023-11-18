@@ -82,28 +82,28 @@ let totalEl = document.getElementById("sum-el")
 
 function add(){
     addition = num1 + num2
-    totalEl.textContent += addition
-    symEl.textContent = ('+')
+    totalEl.textContent = "Sum: " + addition
+    symEl.textContent = ('+') 
+    
 }
 
 function subtract(){
     sub = num1 - num2
-    totalEl.textContent += sub
+    totalEl.textContent = "Sum: " + sub
     symEl.textContent = ('-')
 }
 
 function divide(){
     div = num1 / num2
-    totalEl.textContent += div
+    totalEl.textContent = "Sum: " + div
     symEl.textContent = ('/')
 }
 
 function multiply(){
     mult = num1 * num2
-    totalEl.textContent += mult
+    totalEl.textContent = "Sum: " + mult
     symEl.textContent = ('*')
 }
-
 
 
 
