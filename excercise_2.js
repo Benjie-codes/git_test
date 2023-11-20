@@ -6,6 +6,14 @@ let message = ""
 let cardEl = document.getElementById("card-el")
 let sumEl = document.getElementById("sum-el")
 let messageEl = document.getElementById("message-el")
+let playerEl = document.getElementById("player-el")
+
+let player = {
+    name: "Ben",
+    chips: 235
+}
+
+playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard(){
     let randomNumber = Math.floor(Math.random() * 13 + 1 )
