@@ -113,9 +113,66 @@ console.log(raceTime)
 // }
 
 //for loop practice
-let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+// let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
 
-console.log("The 5 largest countries in the world: ")
-for (let i = 0; i < largeCountries.length; i++){
-    console.log("- " + largeCountries[i])
+// console.log("The 5 largest countries in the world: ")
+// for (let i = 0; i < largeCountries.length; i++){
+//     console.log("- " + largeCountries[i])
+// }
+
+// push(), pop(), shift(), unshift() practice
+// let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+// console.log(largeCountries)
+
+// largeCountries.pop()
+// largeCountries.push("Pakistan")
+// largeCountries.shift()
+// largeCountries.unshift("China")
+// largeCountries.push("Tuvalu")
+// largeCountries.push("Monaco")
+
+// console.log(largeCountries)
+
+// logical operator practice
+// let dayOfMonth = 31
+// let weekday = "friday"
+// if (dayOfMonth === 13 && weekday === "friday" ){
+//     console.log("😱😱")
+// }
+
+// rock paper scissors game
+// let hands = ["rock", "paper", "scissors"]
+// function handsGame(){
+//     randomIndex = Math.floor(Math.random(hands) * 3 + 1)
+//     if (randomIndex === 1){
+//         console.log(hands[0])
+//     } else if(randomIndex === 2){
+//         console.log(hands[1])
+//     } else {
+//         console.log(hands[2])
+//     }
+//     return randomIndex
+// }
+// handsGame()
+// // OR 
+// function getHand(){
+//     random = Math.floor(Math.random(hands) * 3)
+//     return hands[random]
+// }
+// console.log(getHand())
+
+//sorting fruits
+let fruits = ["apple", "orange", "apple", "apple", "orange"]
+let appleShelf = document.getElementById('apple-shelf')
+let orangeShelf = document.getElementById('orange-shelf')
+
+function shelf(){
+    for (let i = 0; i < fruits.length; i++){
+        if (fruits[i] === "apple"){
+            appleShelf.textContent += "🍎"
+        } else if (fruits[i] === "orange") {
+            orangeShelf.textContent += "🍊"
+        }
+    }
 }
+shelf()
